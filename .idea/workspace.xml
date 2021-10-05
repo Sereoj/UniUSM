@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3bfa6590-19e6-4a44-82dc-2ef3e23d2291" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectId" id="1ygjGiALkzhcYWuoZzL7nWOTkoI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bfa6590-19e6-4a44-82dc-2ef3e23d2291" name="Default Changelist" comment="" />
+      <created>1632680032046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632680032046</updated>
+      <workItem from="1632680033090" duration="2623000" />
+      <workItem from="1632690337195" duration="23000" />
+      <workItem from="1632736572259" duration="1259000" />
+      <workItem from="1632825111987" duration="10000" />
+      <workItem from="1632938128652" duration="266000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1632938397602">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1632938397602" />
+    <state x="790" y="247" key="NewPhpClassDialog" timestamp="1632680208147">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="790" y="247" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1632680208147" />
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1632681277887">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1632681277887" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1632938219113">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1632938219113" />
+    <state x="832" y="369" key="cloudConfig.SelfSettingsDialog" timestamp="1632938236056">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="832" y="369" key="cloudConfig.SelfSettingsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1632938236056" />
+  </component>
+</project>
