@@ -10,7 +10,6 @@ namespace UniUSM\Core
         "UniUSM/Core/Version/Version.php",
         "UniUSM/Core/Data/inc.php",
         "UniUSM/Core/Size/Size.php",
-        "UniUSM/Core/Size/Font.php",
         "UniUSM/Core/Messages/Set.php",
         "UniUSM/Core/Component/Component.php",
         "UniUSM/Core/Component/LowerPanel.php",
