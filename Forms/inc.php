@@ -33,7 +33,6 @@ namespace UniUSM\Forms
     {
         Starter::Run($files);
         Settings::OpenSettings("data/UniUSM.sv");
-
         if(Activation::IsValidate() && Version::Get() == "020")
         {
             if(Env::Get("UseStable") == true)

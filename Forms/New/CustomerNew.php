@@ -13,11 +13,6 @@ class CustomerNew extends Customer
     {
         c("New")->onCreate = function($self){};
         c("New")->onShow = function($self){};
-
-        if(Version::Get() > "020")
-        {
-            c("New->version")->onExecute = function ($self) {};
-        }
     }
 
     function update()

@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bfa6590-19e6-4a44-82dc-2ef3e23d2291" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3bfa6590-19e6-4a44-82dc-2ef3e23d2291" name="Default Changelist" comment="Delete files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Data/inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Data/inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Size/Font.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/Core/inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Forms/Dashboard.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../OpenServer/domains/v2.w2me.ru" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -66,8 +61,17 @@
       <workItem from="1632938128652" duration="266000" />
       <workItem from="1633466457549" duration="548000" />
       <workItem from="1633524663551" duration="7000" />
-      <workItem from="1633534794962" duration="447000" />
+      <workItem from="1633534794962" duration="621000" />
+      <workItem from="1633535531536" duration="78000" />
     </task>
+    <task id="LOCAL-00001" summary="Delete files">
+      <created>1633535414789</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633535414789</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,15 +87,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Delete files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1632938397602">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1633535608672">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1632938397602" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1633535608672" />
     <state x="838" y="422" key="Github.ShareDialog" timestamp="1633466477919">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -112,6 +118,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1632938219113" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1633535561850">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1633535561850" />
     <state x="832" y="369" key="cloudConfig.SelfSettingsDialog" timestamp="1632938236056">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
