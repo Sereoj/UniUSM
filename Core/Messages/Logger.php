@@ -5,18 +5,16 @@ namespace UniUSM\Core\Messages;
 
 class Logger
 {
-    protected static $title;
+
     public static $enable = false;
 
     public static function Send($message, $action, $code)
     {
         if(self::$enable)
-            file_put_contents('usm.log', self::_env($message, $action, $code), FILE_APPEND);
-    }
-
-    public static function SetTitle($title)
-    {
-        self::$title = $title;
+            if($action != 'only')
+                file_put_contents('usm.log', self::_env($message, $action, $code), FILE_APPEND);
+            else
+                file_put_contents('usm.log', $message, FILE_APPEND);
     }
 
     private static function _env($message, $action, $code)
@@ -25,7 +23,7 @@ class Logger
         $cd = null;
         if($message !=null)
         {
-            switch ($action)
+            switch (strtolower($action))
             {
                 case "move":
                 case "include":

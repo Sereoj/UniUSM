@@ -8,6 +8,7 @@ use UniUSM\Core\Component\LowerPanel;
 use UniUSM\Core\Component\Triggle;
 use UniUSM\Core\Size\Size;
 use UniUSM\Data\testData\testData;
+use UniUSM\Env\Env\Env;
 use UniUSM\Forms\Customer;
 
 class CustomerMain extends Customer
@@ -61,7 +62,7 @@ class CustomerMain extends Customer
         $button->anchors = 'akRight,akTop';
         $button->onClick = function ($self)
         {
-            if( c("memo1")->visible == true){
+            if( c("Form1->memo1")->visible == true){
                 c("Form1->SynEdit1")->h += 100;
                 LowerPanel::Set(1);
             }else{
@@ -100,10 +101,14 @@ class CustomerMain extends Customer
         Component::Text("form1->label7", "Настр.");
         Component::Text("form1->label11", "Обнов.");
 
-        c("Form1->SynEdit1")->h += 100;
 
-        LowerPanel::Set(1);
-        Triggle::Show();
+        if(Env::Get('Triggle') == 'true')
+            Triggle::Show();
+
+        if(Env::Get('Lowerpanel') == 'true'){
+            LowerPanel::Set(1);
+            c("Form1->SynEdit1")->h += 100;
+        }
     }
 
     public function delete()

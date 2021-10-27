@@ -32,10 +32,9 @@ namespace UniUSM\Forms
     if(Starter::CheckFramework())
     {
         Starter::Run($files);
-        Settings::OpenSettings("data/UniUSM.sv");
         if(Activation::IsValidate() && Version::Get() == "020")
         {
-            if(Env::Get("UseStable") == true)
+            if(Env::Get("UseStable") == "true")
             {
                 $GLOBALS['updateForm'] = 'true';
                 testData::Set("update");
@@ -44,7 +43,7 @@ namespace UniUSM\Forms
                 Logger::Send("Clear:false", "set",1);
             }
 
-            if(Env::Get("mainPre") == true)
+            if(Env::Get("mainPre") == "true")
             {
                 mainPre::Set(Version::Get());
             }

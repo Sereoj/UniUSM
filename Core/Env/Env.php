@@ -20,6 +20,16 @@ namespace UniUSM\Env\Env
             }
         }
 
+        public static function isValue($value)
+        {
+            global $env;
+            if($env != null && in_array($env, $value))
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static function GetAll()
         {
             global $env;

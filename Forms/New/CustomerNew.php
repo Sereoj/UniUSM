@@ -8,7 +8,6 @@ use UniUSM\Forms\Customer;
 
 class CustomerNew extends Customer
 {
-
     function create()
     {
         c("New")->onCreate = function($self){};
@@ -25,7 +24,7 @@ class CustomerNew extends Customer
 
         Component::Text("New->label5", "UniUSM");
         Component::Text("New->label7", "Framework: Fainex Framework");
-        Component::Text("New->link1", "UniUSM: Version 1.0");
+        Component::Text("New->link1", "UniUSM: Version ". Version::Framework());
         Component::Text("New->link2", "Активировать");
         Component::Visible("New->link3", false);
     }

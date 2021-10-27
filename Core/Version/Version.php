@@ -14,5 +14,10 @@ namespace UniUSM\Core\Version
         {
             c("Form6->os")->text = $version;
         }
+
+        public static function Framework()
+        {
+            return "1.1";
+        }
     }
 }

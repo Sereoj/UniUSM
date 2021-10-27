@@ -2,7 +2,6 @@
 namespace UniUSM
 {
     use UniUSM\Core\Messages\Logger;
-    const USM_VERSION = '1.0';
 
     class Starter
     {
@@ -42,5 +41,5 @@ namespace UniUSM
 
     Starter::Run($files);
 
-    Logger::Send("#############{UniUSM.Close}#############","check",1);
+    Logger::Send("#############{UniUSM.Close}#############","only",1);
 }

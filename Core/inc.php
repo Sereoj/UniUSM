@@ -5,7 +5,7 @@ namespace UniUSM\Core
     use UniUSM\Starter;
 
     $files = array(
-        "UniUSM/Core/Env/Env.php",
+        "UniUSM/Core/Iconv/Iconv.php",
         "UniUSM/Core/Activation/Activation.php",
         "UniUSM/Core/Version/Version.php",
         "UniUSM/Core/Data/inc.php",

@@ -7,6 +7,7 @@ use UniUSM\Core\Component\Component;
 use UniUSM\Core\Messages\Set;
 use UniUSM\Core\Size\Size;
 use UniUSM\Core\Version\Version;
+use UniUSM\Env\Env\Env;
 use UniUSM\Forms\Customer;
 
 class CustomerSettings extends Customer
@@ -44,7 +45,7 @@ class CustomerSettings extends Customer
         };
         c("Form6->label5")->onClick = function ($self)
         {
-
+            pre(Env::GetAll());
         };
         c("Form6->label7")->onClick = function($self) {
             $data = array();
