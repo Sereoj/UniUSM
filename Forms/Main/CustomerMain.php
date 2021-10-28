@@ -74,7 +74,11 @@ class CustomerMain extends Customer
 
     public function update()
     {
-        //Component::Hide("form1->synedit1", false);
+        if(Env::Get('SynEdit.Hide') == 'true')
+        {
+            Component::Hide("form1->synedit1", false);
+        }
+
         Component::Hide("form1->edit2", false);
         Component::Hide("form1->label10", false);
         Component::Hide("form1->image2", false);
@@ -105,7 +109,7 @@ class CustomerMain extends Customer
         if(Env::Get('Triggle') == 'true')
             Triggle::Show();
 
-        if(Env::Get('Lowerpanel') == 'true'){
+        if(Env::Get('LowerPanel') == 'true'){
             LowerPanel::Set(1);
             c("Form1->SynEdit1")->h += 100;
         }

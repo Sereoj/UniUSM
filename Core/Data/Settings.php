@@ -1,7 +1,5 @@
 <?php
 
-
-use UniUSM\Core\Messages\Logger;
 use UniUSM\Env\Env\Env;
 
 class Settings

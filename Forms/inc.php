@@ -3,7 +3,6 @@
 namespace UniUSM\Forms
 {
 
-    use Settings;
     use UniUSM\Core\Component\Component;
     use UniUSM\Core\Messages\Logger;
     use UniUSM\Core\Version\Version;
@@ -37,7 +36,7 @@ namespace UniUSM\Forms
             if(Env::Get("UseStable") == "true")
             {
                 $GLOBALS['updateForm'] = 'true';
-                testData::Set("update");
+                testData::Set("true");
 
                 Component::Enable("form1->clear", false);
                 Logger::Send("Clear:false", "set",1);
@@ -45,7 +44,7 @@ namespace UniUSM\Forms
 
             if(Env::Get("mainPre") == "true")
             {
-                mainPre::Set(Version::Get());
+                mainPre::Set("Version:\t".Version::Get());
             }
             $customers = Env::Get("Customer");
 
@@ -75,6 +74,7 @@ namespace UniUSM\Forms
                 $updateForm = new CustomerUpdateForm();
                 $updateForm->Run();
             }
+
         }
 
         if(Activation::IsValidate() && Version::Get() > "020")
