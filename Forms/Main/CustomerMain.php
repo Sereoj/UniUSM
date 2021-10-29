@@ -6,6 +6,8 @@ namespace UniUSM\Forms\Main;
 use UniUSM\Core\Component\Component;
 use UniUSM\Core\Component\LowerPanel;
 use UniUSM\Core\Component\Triggle;
+use UniUSM\Core\Messages\Logger;
+use UniUSM\Core\Messages\Set;
 use UniUSM\Core\Size\Size;
 use UniUSM\Data\testData\testData;
 use UniUSM\Env\Env\Env;
@@ -51,16 +53,12 @@ class CustomerMain extends Customer
 
         };
 
+        $lowerPanel = Component::Create(new \FQuickButton (c("Form1")), c("Form1"), "ButtonlowerPanel");
+        $lowerPanel->anchors = 'akRight,akTop';
+        Component::Text($lowerPanel, '<>');
+        Component::setMove($lowerPanel, array("x" => 736, "y" => 8), array("w" => 30, "h" => 22));
 
-        $button = new \FQuickButton (c("Form1"));
-        $button->x = 736;
-        $button->y = 8;
-        $button->w = 30;
-        $button->h = 22;
-        $button->caption = '<>';
-        $button->name = "lablPl";
-        $button->anchors = 'akRight,akTop';
-        $button->onClick = function ($self)
+        $lowerPanel->onClick = function ($self)
         {
             if( c("Form1->memo1")->visible == true){
                 c("Form1->SynEdit1")->h += 100;
@@ -77,8 +75,10 @@ class CustomerMain extends Customer
         if(Env::Get('SynEdit.Hide') == 'true')
         {
             Component::Hide("form1->synedit1", false);
+            Logger::Send('SynEdit Hide', 'set', true);
         }
-
+        Set::RemoveAt("form1->synedit1");
+        Set::Editor("<?\n//Auto-generation by UniUSM\n");
         Component::Hide("form1->edit2", false);
         Component::Hide("form1->label10", false);
         Component::Hide("form1->image2", false);

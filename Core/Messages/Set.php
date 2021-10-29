@@ -7,15 +7,12 @@ namespace UniUSM\Core\Messages
         {
             if($message != null)
             {
-                c("Form1->memo1")->text = $message;
+                c("Form1->memo1")->text .= $message."\n";
             }
         }
         public static function Editor($message)
         {
-            if($message != null)
-            {
-                c("Form1->synedit1")->text = $message;
-            }
+            c("Form1->synedit1")->text .= $message."\n";
         }
         public static function Action($message)
         {
@@ -29,9 +26,12 @@ namespace UniUSM\Core\Messages
 
         public static function RemoveAt($model)
         {
-            if(isset($model) && $model->name != null)
+            if(is_object($model))
             {
                 $model->text = null;
+            }else
+            {
+                c($model)->text = null;
             }
         }
     }

@@ -13,6 +13,7 @@ namespace UniUSM\Forms
     use UniUSM\Forms\NewForm\CustomerNew;
     use UniUSM\Forms\ProjectManager\CustomerManager;
     use UniUSM\Forms\Settings\CustomerSettings;
+    use UniUSM\Forms\UniUSM\CustomerUniUSM;
     use UniUSM\Forms\UpdateForm\CustomerUpdateForm;
     use UniUSM\Starter;
     use UniUSM\Core\Activation\Activation;
@@ -46,9 +47,14 @@ namespace UniUSM\Forms
             {
                 mainPre::Set("Version:\t".Version::Get());
             }
+
             $customers = Env::Get("Customer");
 
             //Customer=[New;Activation;Main;Settings;ProjectManager;UpdateForm]
+
+            $uniForm = new CustomerUniUSM();
+            $uniForm->Run();
+
             if(in_array("New", $customers))
             {
                 $newForm = new CustomerNew();

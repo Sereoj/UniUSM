@@ -7,9 +7,21 @@ namespace UniUSM\Core\Component
 
     class Component
     {
+
+        public static function Create($control, $form, $name)
+        {
+            $template = $control;
+            $template->name = $name;
+            $template->parent = $form;
+            //$template->show();
+
+            return $template;
+
+        }
+
         public static function Color($type, $value)
         {
-            if(is_array($type) && $type != null)
+            if(is_object($type))
             {
                 $type->color = $value;
             }else
@@ -20,7 +32,7 @@ namespace UniUSM\Core\Component
 
         public static function Transparent($type, $transparent)
         {
-            if(is_array($type) && $type != null)
+            if(is_object($type))
             {
                 if(is_bool($transparent))
                 {
@@ -31,14 +43,35 @@ namespace UniUSM\Core\Component
             }
         }
 
+        public static function Border($control, $type)
+        {
+            if($control != null && $type != null)
+            {
+                c($control)->borderStyle = $type;
+            }
+        }
+
+        public static function getBorder($control)
+        {
+            return c($control)->borderStyle;
+        }
+
         public static function Move($type, $xy, $wh)
         {
             Size::Move($type, $xy, $wh);
         }
 
+        public static function setMove($type, $xy, $wh)
+        {
+            $type->x = $xy['x'];
+            $type->y = $xy['y'];
+            $type->w = $wh['w'];
+            $type->h = $wh['h'];
+        }
+
         public static function Text($type, $text)
         {
-            if(is_array($type) && $type != null)
+            if(is_object($type))
             {
                 $type->caption = $text;
             }else{
@@ -48,7 +81,7 @@ namespace UniUSM\Core\Component
 
         public static function Visible($type, $visible)
         {
-            if(is_array($type) && $type != null)
+            if(is_object($type))
             {
                 if(is_bool($visible))
                 {
@@ -61,15 +94,17 @@ namespace UniUSM\Core\Component
 
         public static function isVisible($type)
         {
-            if(is_array($type))
+            if(is_object($type))
             {
                 return $type->visible;
+            }else{
+                return c($type)->visible;
             }
         }
 
         public static function Enable($type, $enable)
         {
-            if(is_array($type) && $type != null)
+            if(is_object($type) && $type != null)
             {
                 if(is_bool($enable)){
                     $type->enable = $enable;
@@ -87,7 +122,7 @@ namespace UniUSM\Core\Component
 
         public static function isEnable($type)
         {
-            if(is_array($type) && $type != null)
+            if(is_object($type) && $type != null)
             {
                 return $type->enable;
             }
@@ -95,7 +130,7 @@ namespace UniUSM\Core\Component
 
         public static function Is($type)
         {
-            if(is_array($type)) return true;
+            if(is_object($type)) return true;
         }
 
     }

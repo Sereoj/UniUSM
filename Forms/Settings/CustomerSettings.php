@@ -22,6 +22,16 @@ class CustomerSettings extends Customer
         };
 
         c("Form6->label2")->onClick = function($self){
+
+
+            if(Component::isVisible("Form6->scrollBox1"))
+            {
+                Component::Visible("Form6->scrollBox1",false);
+            }else
+            {
+                Component::Visible("Form6->scrollBox1",true);
+            }
+
             if(file_exists("syntax.json"))
             {
                 $syn = json_decode(file_get_contents ("syntax.json"), true);
@@ -45,7 +55,13 @@ class CustomerSettings extends Customer
         };
         c("Form6->label5")->onClick = function ($self)
         {
-            pre(Env::GetAll());
+            if(Component::isVisible("Form6->UniUSMPanel"))
+            {
+                Component::Visible("Form6->UniUSMPanel", false);
+            }else
+            {
+                Component::Visible("Form6->UniUSMPanel", true);
+            }
         };
         c("Form6->label7")->onClick = function($self) {
             $data = array();
@@ -93,7 +109,6 @@ class CustomerSettings extends Customer
     {
         Component::Text("Form6->label1", "Настройки");
 
-
         Component::Text('Form6->label5', 'USM Config');
 
         Size::Move("Form6->shape1", array('x' =>8, 'y' =>24), array('w' => 605, 'h'=> 368));
@@ -107,6 +122,8 @@ class CustomerSettings extends Customer
         Size::Move("Form6->label11", null, array('w' =>54 , 'h' =>24 ));
         Size::Move("Form6->label8", null, array('w' =>54 , 'h' =>24 ));
         Size::Move("Form6->exit", array('x' =>584 , 'y' =>0 ) , array('w' =>40 , 'h' =>24 ));
+
+        Component::Text("Form6->label2", "Редактор");
 
         Component::Color("Form6->label5", 0x242424);
         Component::Color("Form6->label6", 0x242424);

@@ -11,7 +11,7 @@ namespace UniUSM\Core\Size
     {
         public static function Move($type, $xy, $wh)
         {
-            if(is_array($type))
+            if(is_object($type))
             {
                 if($xy != null && is_array($xy))
                 {
